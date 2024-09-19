@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 işlem</title>
+    <script>
+        function toplaHesapla(){
+            var toplam;
+            s1 = parseFloat(document.getElementById('sayı1').value);
+            s2 = parseFloat(document.getElementById('sayı2').value);
+            toplam = s1+s2;
+            alert("toplam sonucu"+ toplam);
+            document.getElementById("sonuc").innerHTML=toplam;
+
+
+        }
+    </script>
+</head>
+<body>
+    <h3>dört işlem</h3>
+    <label for="sayı1"></label>
+    <input type="text"> <br>
+    <label for="sayı2"></label>
+    <input type="text"> <br>
+
+    <button>topla</button> <br>   
+    <button>çıkar</button> <br>
+    <button>çarp</button> <br>
+    <button>böl</button> <br>
+
+<div id ="sonuc"></div>
+
+
+</body>
+</html>
