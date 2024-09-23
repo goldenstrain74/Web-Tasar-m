@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js if yapısı</title>
+    <style>
+        body{
+
+            background-color: aliceblue;
+        }
+       .kirmizi{
+        color: red;
+       }
+       .yesil{
+        color: lime;
+       }
+       
+    </style>
+</head>
+<body>
+    <label for="">not1: </label>
+    <input id="not1" name="not1" type="text"><br>
+    <label for="">not2: </label>
+    <input id="not2" name="not2" type="text"><br>
+    <button onclick="hesapla()" >hesapla</button>
+    <div id="sonuc"></div>
+    <div id="ortalama" ></div>
+    <script>
+        function hesapla(){
+        let n1, n2 , ortalama, durum="";
+        const sonuc = document.getElementById('sonuc');
+        n1=parseFloat(document.getElementById('not1').value);
+        n2=parseFloat(document.getElementById('not2').value);
+        ortalama=(n1+n2)/2;
+        document.getElementById("ortalama").innerHTML=ortalama;
+        
+        if(ortalama>=50)
+        {
+            durum= "geçti";
+            sonuc.classList.add('yesil');
+            sonuc.classList.remove('kirmiz');
+        }
+        else 
+        {
+            durum="kaldı";
+            sonuc.classList.add('kirmizi');
+            sonuc.classList.remove('yesil');
+        }
+        
+        document.getElementById("sonuc").innerHTML=durum;
+
+        
+        }
+    </script>
+    
+
+</body>
+</html>
