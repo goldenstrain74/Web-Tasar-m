@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script>    
+    var elemanSayisi;
+    const meyveler = ["elma","amrut","muz","şeftali"];
+    
+    
+    /*elemanlara erişme*/
+    
+    document.write("ilk eleman: "+meyveler[0]+"<br>");
+    document.write("ikinci eleman: "+meyveler[1]+"<br>");
+    
+    /* eleman sayısı yazdırma */
+    elemanSayisi=meyveler.length;
+    document.write("eleman sayısı: "+elemanSayisi+"<br>");
+
+    /*eleman silme- pop (sondaki elemanı siler)*/
+    document.write("**eleman siliyoruz**"+"<br>")
+    meyveler.pop();
+    document.write("tüm elemanlar: "+meyveler+"<br>");
+    elemanSayisi=meyveler.length;
+    document.write("eleman sayısı: "+elemanSayisi+"<br>");
+    
+
+    /*eleman ekleme- push (en sona eleman ekler)*/
+    document.write("**eleman ekliyoruz**"+"<br>")
+    meyveler.push("kayısı");
+    document.write("tüm elemanlar: "+meyveler+"<br>");
+    elemanSayisi=meyveler.length;
+    document.write("eleman sayısı: "+elemanSayisi+"<br>");
+
+        /*eleman silme - shift(en baştan eleman siler)*/
+    document.write("**baştan eleman siliyoruz**"+"<br>");
+    meyveler.shift();
+    document.write("tüm elemanlar: "+meyveler+"<br>");
+    elemanSayisi=meyveler.length;
+    document.write("eleman sayısı: "+elemanSayisi+"<br>");
+
+    //elemanı değiştirme
+    document.write("**eleman değiştirme** <br>");
+    meyveler[0]="mandalina";
+    document.write("tüm elemanlar: "+meyveler+"<br>");
+    elemanSayisi=meyveler.length;
+    document.write("eleman sayısı: "+elemanSayisi+"<br>"+"<br>");
+    
+    </script>
+</body>
+</html>
