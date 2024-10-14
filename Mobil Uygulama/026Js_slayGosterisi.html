@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slayt</title>
+    <style>
+        #slide{
+           height: 300px;
+           overflow: hidden;
+           width:  auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="Images/amasra1.jpg"   id="slide" alt="amasra">
+    
+    <script>
+         const resimler=[
+            "Images/amasra1.jpg",
+            "Images/amasra2.jpg",
+            "Images/amasra3.jpg",
+            "Images/amasra4.jpg",
+            "Images/amasra5.jpg"
+          ]
+          var siraNo=0;
+
+        setInterval(()=>{
+         document.getElementById("slide").src=resimler[siraNo];
+         siraNo=(siraNo+1)% resimler.length;
+               
+        },3000); 
+    </script>
+    
+</body>
+</html>

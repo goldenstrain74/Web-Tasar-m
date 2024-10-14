@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAT</title>
+</head>
+<style>
+     #body{
+        background-color: aliceblue;
+    }
+    #saat{
+        color: darkblue;
+        font-size: 60px;
+        float: left;
+        width: max-content;
+        height: 100px;
+        background-color: navy;
+        color: white;
+    }
+    #saniye{
+        float: left;
+        width: max-content;
+        height: 100px;
+        background-color: navy;
+        color: white;
+        font-size: 60px;
+        color: red;
+        
+    }
+   
+</style>
+<body>
+    
+    <div id="saat"></div>
+    <div id="saniye"></div>
+    <button onclick=""></button>
+    <script>
+        dk=40;
+        sn=60;
+        const IntervalId= setInterval(()=>{
+            sn--;
+                document.getElementById("saat").innerHTML=dk+':';
+                document.getElementById("saniye").innerHTML=sn;
+               if(sn<10){
+                document.getElementById("saniye").innerHTML="0"+sn;
+               }
+               if(dk<10){
+                document.getElementById("saat").innerHTML='0'+dk+':';
+               }
+                if(dk==0 && sn==0){
+                    alert("süre bitti");
+                    
+                }
+                if(sn==0)
+                {
+                    sn=60
+                    dk--;
+                
+                }
+                if(dk<0){
+                    clearInterval(IntervalId);
+                }
+               
+        },1);
+        
+
+        
+    </script>
+</body>
+</html>
