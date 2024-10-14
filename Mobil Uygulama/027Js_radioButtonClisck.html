@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio button</title>
+</head>
+<body>
+    
+        <input type="radio" name="renk" id="Blue">
+        Blue Template <br>
+        <input type="radio" name="renk" id="Red">
+        Red Template <br>
+        <input type="radio" name="renk" id="Green">
+        Green Template <br>
+        
+        <button onclick="renkDegis()" > Renk değiştirme</button>
+   
+    <script>
+        function renkDegis(){
+             if(document.getElementById("Blue").checked==true){
+                document.getElementsByTagName("body")[0].style.backgroundColor="blue";
+            }
+            
+            else if(document.getElementById("Red").checked==true){
+                document.getElementsByTagName("body")[0].style.backgroundColor="red";
+            }
+            
+            else if(document.getElementById("Green").checked==true){
+                document.getElementsByTagName("body")[0].style.backgroundColor="green";
+            }
+        }
+    </script>
+</body>
+</html>
