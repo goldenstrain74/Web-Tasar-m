@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <style>
+        body{background-color: aliceblue;}
+    </style>
+</head>
+ <!-- 
+        th= başlık oluşturma
+        tr= satır oluşturma
+        td= satır içinde hücre olulturma 
+        cellpadding= yazıların hücre çerçevesine olan mesafesini ayarlar
+        cellsapcing= tablo çerçeve kalınlığını arttırır
+    -->
+<body>
+    <h1>Table renklendirme</h1>
+    <table border="5" cellpadding="5" cellspacing="5">
+        <thead>
+            <th>Months</th>
+            <th>Sell</th>
+        </thead>
+        <tBody>
+            <tr>
+                <td bgcolor="lime">january</td>
+                <td bgcolor="lightgray">100,000</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow" >fabruary</td>
+                <td bgcolor="lightgray">170,000</td>
+            </tr>
+            <tr>
+                <td bgcolor="palevioletred">march</td>
+                <td bgcolor="lightgray">210,000</td>
+            </tr>
+        </tBody>
+        
+    </table> <br>
+    <h1>Table satır sütun birleştirme</h1>
+    <table border="7">
+        <th>film adı</th>
+        <th>oyuncu</th>
+        <th>tür</th>
+
+        <tr>
+            <td>kimi no na wa</td>
+            <td>mitsuha miyamizu</td>
+            <td>animasyon/ romantizm</td>
+        </tr>
+        <tr>
+            <td>hababam sınıfı</td>
+            <td colspan="2">Kemal sunal</td>
+            <!--<td>Komedi</td>-->
+        </tr>
+        <tr>
+            <td>süt kardeşler</td>
+            <td>kemal sunal</td>
+            
+            <td >Komedi</td>
+        </tr>
+        <tr>
+            <td>suzume no tojimari</td>
+            <td>suzume</td>
+            <td rowspan="2">animasyon/ romantizm</td>
+        </tr>
+        <tr>
+            <td>a wisker away</td>
+            <td>tamotaka</td>
+            <!--<td>animasyon/ romantizm</td>-->
+        </tr>
+        
+    </table>
+
+
+</body>
+</html>

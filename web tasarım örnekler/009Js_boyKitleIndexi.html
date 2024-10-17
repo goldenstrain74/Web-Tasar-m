@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boy kitle indexi</title>
+    <style>
+        body{
+
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <table style="margin-top: 50px;" align="center" border="2px">
+        <tr>
+            <td>
+                <label for="">kilo</label>
+            </td>
+            <td>
+                <input type="text" name="kilo" id="kilo">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">boy</label>
+            </td>
+            <td>
+                <input type="text" name="boy" id="boy"><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button onclick="vka()" >vka hesapla</button></td>
+        </tr>
+       <tr>
+        <td colspan="2" align="center"><div id="bki"></td>
+       </tr>
+       
+       <tr>
+        <td colspan="2" align="center"><div id="durum" ></td>
+       </tr>
+    </table>
+
+    
+    
+    
+    
+    
+    
+    
+
+    <script>    
+    function vka(){
+       let boy ,kilo, bki, durum="";
+       boy= parseFloat(document.getElementById("boy").value);
+       kilo = parseFloat(document.getElementById("kilo").value);
+
+       bki = (kilo)/(boy*boy);
+       document.getElementById("bki").innerHTML=bki;
+       if(bki<20)
+       durum="zayıf";
+       else if (bki>=20&&bki<25 ) 
+       durum="normal";
+       else if (bki>=25&&bki<30 ) 
+       durum="hafif şişman";
+       else if (bki>=30&&bki<35 ) 
+       durum="şişman";
+       else if (bki>=35&&bki<40 ) 
+       durum="sağlık açısından önemli";
+       else if (bki>=40&&bki<45 ) 
+       durum="aşırı şışman";
+       else if (bki>=45&&bki<50 ) 
+       durum="morbid";
+       console.log(bki);
+       document.getElementById("durum").innerHTML=durum;
+    }
+    </script>
+    
+</body>
+</html>
