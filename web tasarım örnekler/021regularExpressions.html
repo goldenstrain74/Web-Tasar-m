@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regular expressions</title>
+
+</head>
+
+<style>
+    body{
+        background-color: aliceblue;
+        color: navy;
+
+    }
+    input:focus{
+        background-color: yellow;
+        color: limegreen;
+        
+        
+    }
+#tablo{
+   
+    text-align: center;
+    
+}  
+table td {
+    padding: 15px 30px 15px 30px;
+}
+
+form{
+    margin: 0 auto ;
+    max-width: 500px;
+    max-height: 700px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+input[type='submit'],
+input[type='reset'],
+input[type='checkbox']
+{
+    background-color: #007bff;
+    color: white;
+}
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='checkbox']:hover
+{
+    background-color: #3999ff;
+    color: white;
+}
+select{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+</style>
+
+<body>
+    
+<form  action="">
+    <table id="tablo"  align="center">
+        
+            <tr>
+                <td style="font-weight: bold; font-size: 25px; font-family: 'Times New Roman', Times, serif  ;" colspan="2">Kaydol </td>
+            </tr>
+            <tr>
+                <td>
+                    Adı:
+                </td>
+                <td>
+                    <input type="text"  minlength="2" maxlength="15" name="adi" required id="adi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Soyadı:
+                </td>
+                <td>
+                    <input type="text" minlength="2" maxlength="20" name="soyadi" required id="soyadi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-posta:
+                </td>
+                <td>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cinsiyet
+                </td>
+                <td>
+                    <input  type="radio" name="cinsiyet" id="kadin">Kadın           <input checked type="radio" name="cinsiyet" id="erkek">Erkek
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Doğum Yeri
+                </td>
+                <td>
+                    <select required name="select" id="select">
+                        <option value="bartın">Bartın</option>
+                        <option value="">angara</option>
+                        <option value="">ist</option>
+                        <option value="">bursa</option>
+                        
+                        <option value="">Izmir</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Adres
+                </td>               
+                <td>
+                    <textarea name="adres" id="dres" cols="22" rows="5 "></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Şifre
+                </td>
+                <td>
+                    <input type="text" name="sifre" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required id="sifre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Şifre Tekrar
+                </td>
+                <td>
+                    <input type="text" name="sifretekrar" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required  id="sifretekrar">
+                </td>
+            </tr>
+           
+          
+            <tr>
+                <td colspan="2" > <input type="checkbox" name="anlaşma" id="anlaşma">Anlaşmayı Kabul Ediyorum </td> 
+            </tr>
+            <tr>
+                <td colspan="2" ><input type="reset"> <input type="submit" value="Tamam"></td>
+            </tr>
+           
+        
+    </table>
+</form>
+
+</body>
+</html>

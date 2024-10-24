@@ -1,0 +1,16 @@
+h1{
+    font-size: 70px;
+    color: blue;
+    }
+body{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: aliceblue;
+    }   
+p{
+    font-size: 30px;
+    font-family: sans-serif;
+    
+    }

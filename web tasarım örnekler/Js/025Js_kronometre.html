@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Icon" href="Images/favicon.ico">
+    <style>
+        
+        #body{
+           background-color: aliceblue;
+       }
+       #dakika{
+           color: darkblue;
+           font-size: 60px;
+           float: left;
+           width: max-content;
+           height: 60px;
+           background-color: navy;
+           color: white;
+           font-size: 45px;
+           display: block;
+           padding-left: 5px;
+           padding-right: 5px;
+       }
+       #saniye{
+        padding-left: 5px;
+           padding-right: 5px;
+        padding-top: 15px;
+           float: left;
+           width: max-content;
+           height: 45px;
+           background-color: navy;
+           color: white;
+           font-size: 60px;
+           color: red;
+           font-size: 30px;
+           display: block;
+       }
+       #salise{
+        padding-left: 5px;
+           padding-right: 5px;
+        padding-top: 30px;
+        float: left;
+           width: max-content;
+           height: 30px;
+           background-color: navy;
+           color: white;
+           font-size: 60px;
+           color: lime;
+           font-size: 15px;
+           display: block;
+       }  
+       #btn1{
+        display: inline;
+        /*margin-top:  15px ;*/
+        margin-left: 15px;
+        width: 100px;
+        height: 40px;
+        font-size: 20px ;
+        text-align: center;
+        font-weight: bold;
+       }
+      
+       
+      
+   </style>
+</head>
+<body onload="ilkEkran()">
+
+        <div id="dakika"></div>
+        <div id="saniye"></div>
+        <div id="salise"></div>
+        <br>
+        <button id="btn1" onclick="ilerisay()">başlat</button>
+        <button id="btn1" onclick="durdur()"> durdur </button> 
+        <button id="btn1" onclick="sıfırla()">sıfırla</button>
+        
+        <script>
+        dk=0;
+        sn=0;
+        sl=0;
+        dur=0;
+        function ilerisay(){
+             IntervalId= setInterval(()=>{
+            sl++;
+                document.getElementById("dakika").innerHTML=dk+':';
+                document.getElementById("saniye").innerHTML=sn+'.';
+                document.getElementById("salise").innerHTML=sl;
+               if(sn<10){ document.getElementById("saniye").innerHTML="0"+sn+'.'; }
+
+               if(dk<10){document.getElementById("dakika").innerHTML='0'+dk+':';}
+
+               if(sl<10){document.getElementById("salise").innerHTML='0'+sl;}
+                
+               if(sl==100){sn++; sl=0;}
+               if(sn==60){dk++; sn=0;}
+               
+        },10);} 
+        
+                function durdur(){
+                    clearInterval(IntervalId); 
+             
+                   
+                }
+            
+
+
+                function sıfırla(){
+                        dk=0;
+                        sn=0;
+                        sl=0;
+                        ilkEkran()
+                    }
+                
+
+
+                    function ilkEkran(){
+                        document.getElementById("dakika").innerHTML=dk+':';
+                document.getElementById("saniye").innerHTML=sn+'.';
+                document.getElementById("salise").innerHTML=sl;
+               if(sn<10){ document.getElementById("saniye").innerHTML="0"+sn+'.'; }
+
+               if(dk<10){document.getElementById("dakika").innerHTML='0'+dk+':';}
+
+               if(sl<10){document.getElementById("salise").innerHTML='0'+sl;}
+                    }
+                    
+        
+    </script>
+</body>
+</html>

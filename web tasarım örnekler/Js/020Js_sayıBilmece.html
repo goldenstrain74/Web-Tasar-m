@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sayı bilmece oyunu</title>
+    <link rel="Icon" href="Images/favicon.ico">
+    <script>
+        var hak=5
+        uretilen= Math.floor(Math.random()*100)+1;
+        while(1)
+{
+    alert("Canınız: "+hak);
+  sayi= prompt('Bir sayı giriniz:');
+  if (sayi>uretilen){
+    alert('Büyük sayı girdiniz');
+    hak--;
+    if(hak==0){
+      this.close();
+      break ;
+  }
+    
+    
+    
+   }
+   
+
+   if (sayi<uretilen){
+    alert('Küçük sayı girdiniz');
+    hak--;
+    
+    if(hak==0){
+        this.close();
+        break ;
+    }
+    
+   }
+   
+
+    if (sayi==uretilen){
+  alert('Tebrikler bildiniz'); break;
+
+ 
+
+}
+
+
+
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

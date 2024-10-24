@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ü, initial-scale=1.0">
+    <title>Tablolar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient( midnightblue, blue,cyan, lightblue);
+            height: 98vh;
+            color: midnightblue;
+            
+        }
+        tr:hover{
+
+            background-color: lightblue;
+            color: blue;
+        }
+        td:hover{
+            background-color: aqua;
+            color: red  ;
+        }
+        th:hover{
+            background-color: aqua;
+            color: red  ;
+        }
+        table{
+            border: "3";
+            background-color: whitesmoke;
+            color: black;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 25px;
+            font-style: normal;
+            
+        }
+        td{
+            line-height: 30px; /*satır yüksekliği ayarlar*/
+            padding: 3px; /*iç boşluk yazının cevre sınırına uzaklığı */
+            margin: 1px; /*tablonun etrafındaki boşluk*/
+        }
+        tr:nth-child(even){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        th= başlık oluşturma
+        tr= satır oluşturma
+        td= satır içinde hücre olulturma 
+    -->
+    <table border="5" align="center">
+        <tr>
+            <td>hücre1</td>
+            <td>hücre2</td>
+        </tr>
+        <tr>
+            <td>hücre1.1</td>
+            <td>hücre2.1</td>
+        </tr>
+    </table><br>
+<!-- tablo 2 -->
+    <table border="1" align="center">
+
+        <thead>
+            <th>Sıra No</th>
+        <th>Meslek Dersleri</th>
+        <th>Kültür Dersleri</th>
+        
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>NTP</td>
+                <td>Edebiyat</td>
+            </tr>
+            <tr >
+                <td>2</td>
+                <td>Web tasarım</td>
+                <td>Matematik</td>
+            </tr>
+        </tbody>
+        
+
+    </table>
+
+    <table border="1" align="center">
+
+        <thead>
+            <th>No</th>
+        <th>isim</th>
+        <th>İş</th>
+        
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>asaf tekken</td>
+                <td>oyun geliştiricisi</td>
+            </tr>
+            <tr >
+                <td>2</td>
+                <td>alper Kabalak</td>
+                <td>Satış danışmalnığı</td>
+            </tr>
+            <tr >
+                <td>3</td>
+                <td>akmet berisisi</td>
+                <td>animasoyn çizerliği</td>
+            </tr>
+            <tr >
+                <td>4</td>
+                <td>eleyyübi blackgoat</td>
+                <td>web tasarım uzmanı</td>
+            </tr> j
+        </tbody>
+        
+    </table>
+</body>
+</html>
